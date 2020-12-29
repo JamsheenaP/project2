@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static%}
+{% block title %}
+   welcome
+{% endblock %}
+{% block content%}
+    <div class="container">
+        <form action="" method="POST">
+            {% csrf_token %} 
+            <p>
+                <label for="">Product Name:</label>
+                <input type="text" name="product_name">
+            </p>
+            <p>
+                <label for="">Price:</label>
+                <input type="number" name="price">
+            </p>
+            <p>
+                <label for="">Image:</label>
+                <input type="url" name="Image" id="">
+            </p>
+            <p>
+                <input type="Add">
+            </p>
+        </form>
+    </div>
+    {% endblock %}
