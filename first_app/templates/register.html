@@ -4,11 +4,11 @@
    welcome
 {% endblock %}
 {% block content%}
-    <div class="container-fluid">
+    <div class="container">
         <form action="" method="POST">
             {% csrf_token %} 
             <p>
-                <label for="">Name:</label>
+                <label for="">Name</label>
                 <input type="text" name="name">
             </p>
             <p>
